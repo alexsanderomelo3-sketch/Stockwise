@@ -25,3 +25,4 @@ Sistema de gerenciamento de estoque desenvolvido como projeto pratico durante me
 Novas funcionalidades e melhorias estao sendo implementadas.
 
 ![Dashboard do Stockwise](imagem/Dashboard.png)
+![Tela de produtos do Stockwise](imagem/Produtos.png)
