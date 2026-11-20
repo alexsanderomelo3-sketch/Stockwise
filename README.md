@@ -2,17 +2,19 @@
 
 Sistema de gerenciamento de estoque desenvolvido como projeto pratico durante meus estudos de Analise e desenvolvimento de sistemas.
 
-## Funcionalidades
--Cadastros de produtos
--Edicao e exclusao de produtos 
--Pesquisa de produtos 
--Ordenacao alfabetica
--Ordenacao por quantidade
--Filtro de estoque baixo
--Indicadores de estoque
--Alertas de reposicao
--Armazenamento local com LocalStorage
--Interface responsiva
+## ✨ Funcionalidades
+
+- 📦 **Cadastro de produtos:** adição de novos itens ao estoque.
+- ✏️ **Edição e exclusão de produtos:** atualização e remoção de itens cadastrados.
+- 🔎 **Pesquisa de produtos:** localização rápida de produtos.
+- 🔤 **Ordenação alfabética:** organização dos produtos por nome.
+- 📊 **Ordenação por quantidade:** organização conforme a quantidade disponível.
+- ⚠️ **Filtro de estoque baixo:** identificação de produtos com pouca quantidade.
+- 📈 **Indicadores de estoque:** acompanhamento das informações do estoque.
+- 🔔 **Alertas de reposição:** aviso sobre produtos que precisam ser repostos.
+- 💾 **Armazenamento local com LocalStorage:** salvamento dos dados no navegador.
+- 📱 **Interface responsiva:** adaptação da interface a diferentes tamanhos de tela.
+
 
 ## Tecnologias
 -HTML5
