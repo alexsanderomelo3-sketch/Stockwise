@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockwise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="logo">stockwise</div>
+        <nav>
+            <a href="#">Inicio </a>
+            <a href="#">Produtos</a>
+            <a href="#">Contato</a> 
+        </nav>
+        <button class="btn-sair">Sair</button>
+    </header>
+    <section class="resumo">
+        <div class="card">
+            <h3>Total de Produtos</h3>
+            <p id="totalProdutos">3</p>
+        </div>
+        <div class="card">
+            <h3>Estoque Baixo</h3>
+            <p id="estoqueBaixo">1</p>
+        </div>
+        <div class="card">
+            <h3>Disponivel</h3>
+            <p id="disponivel">1</p>
+        </div>
+        <div class="card">
+            <h3>Valor em Estoque</h3>
+            <p id="valorEstoque">R$ 00,00</p>
+        </div>
+    </section>
+    <main class="conteudo">
+        <h1>Painel de Controle</h1>
+        <p>Bem vindo ao Stockwise</p>
+        <section class="produtos">
+            <h3>Novo Produto</h3>
+            <form id="formProduto">
+                <input type="text" id="nomeProduto" placeholder="Nome do Produto" required>
+                <input type ="text" id="categoriaProduto" placeholder="Categoria" required>
+                <input type ="number" id="quantidadeProduto" placeholder="Quantidade" min="1" step="1" required>
+                <input type ="number" id="precoProduto" placeholder="Preço" min="0.01" step="0.01" required>
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+            <h2>Produtos Cadastrados</h2>
+            <div class="campo-pesquisa">
+                <input type="text" id="pesquisaProduto" placeholder="Pesquisar produto...">
+            </div>
+            <button id="ordenarProdutos">Ordenar A-Z</button>
+            <button id="ordenarQuantidade">Ordenar por Quantidade</button>
+            <button id="filtrarEstoqueBaixo">Mostrar Estoque Baixo</button>
+            <button id="mostrarTodos">Mostrar Todos</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProdutos">
+                    <tr>
+                        <td>Cafe</td>
+                        <td>Bebidas</td>
+                        <td>20</td>
+                        <td>R$ 35,00</td>
+                        <td>Disponível</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Leite</td>
+                        <td>Laticinios</td>
+                        <td>5</td>
+                        <td>R$ 7,00</td>
+                        <td>Estoque Baixo</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Acucar</td>
+                        <td>Mercearia</td>
+                        <td>30</td>
+                        <td>R$ 5,00</td>
+                        <td>Disponível</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <section class="alertas-reposicao">
+                <h3>Alertas de Reposição</h3>
+                <ul id="listaReposicao">
+                </ul>
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
